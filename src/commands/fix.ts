@@ -86,8 +86,8 @@ export const fix = new Listr([
     task: () => new Listr([
       {
         title: 'Install nrelay',
-        skip: () => fsUtil.exists(cwd('node_modules', 'nrelay')),
-        task: () => execa('npm', ['install', 'nrelay@next', '--save']),
+        skip: () => fsUtil.exists(cwd('node_modules', 'nrelay-unity')),
+        task: () => execa('npm', ['install', 'nrelay-unity@next', '--save']),
       },
       {
         title: 'Install TypeScript',

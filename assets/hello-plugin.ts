@@ -1,4 +1,4 @@
-import { Client, Library, PacketHook, PlayerTextPacket, TextPacket } from 'nrelay';
+import { Client, Library, PacketHook, PlayerTextPacket, TextPacket } from 'nrelay-unity';
 
 // The Library decorator gives nrelay some information about
 // your plugin. If it is not present, nrelay won't load the plugin.

@@ -1,4 +1,4 @@
-import * as nrelay from 'nrelay';
+import * as nrelay from 'nrelay-unity';
 import { Arguments } from 'yargs';
 import { cwd } from '../util/path-util';
 import { build } from './build';
@@ -12,7 +12,7 @@ export async function run(args: Arguments): Promise<void> {
   let nrelayLib: typeof nrelay;
 
   // try to get the project's nrelay dependency.
-  const projectNrelay = cwd('node_modules', 'nrelay');
+  const projectNrelay = cwd('node_modules', 'nrelay-unity');
   try {
     nrelayLib = require(projectNrelay);
   } catch (err) {

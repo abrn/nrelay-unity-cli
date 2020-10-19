@@ -86,7 +86,7 @@ export const newCmd = new Listr([
     task: () => new Listr([
       {
         title: 'Install nrelay',
-        task: (ctx) => execa('npm', ['install', 'nrelay@next', '--save'], { cwd: cwd(ctx.name) }),
+        task: (ctx) => execa('npm', ['install', 'nrelay-unity@next', '--save'], { cwd: cwd(ctx.name) }),
       },
       {
         title: 'Install TypeScript',

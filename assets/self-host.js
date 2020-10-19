@@ -1,4 +1,4 @@
-const nrelay = require('nrelay');
+const nrelay = require('nrelay-unity');
 const argv = require('yargs').argv;
 
 const env = new nrelay.Environment(process.cwd());
