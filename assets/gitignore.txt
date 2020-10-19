@@ -1,0 +1,19 @@
+# node stuff
+node_modules/
+
+# build result
+lib/
+
+# resources
+resources/
+
+# config files
+versions.json
+packets.json
+
+# user data
+accounts.json
+
+# cache files
+servers.cache.json
+char-info.cache.json
