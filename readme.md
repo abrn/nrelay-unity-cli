@@ -19,7 +19,7 @@ All credit goes to Thomas for writing this and the only commits I am making are 
 ## Install
 
 ```no-lang
-npm install -g nrelay-cli
+npm install -g nrelay-unity-cli
 ```
 
 ## Commands
