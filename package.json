@@ -1,7 +1,7 @@
 {
-  "name": "nrelay-cli",
-  "version": "1.6.0",
-  "description": "A CLI for creating and running nrelay projects.",
+  "name": "nrelay-unity-cli",
+  "version": "1.0.0",
+  "description": "A CLI for creating and running Unity nrelay projects.",
   "main": "lib/index.js",
   "preferGlobal": true,
   "bin": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomas-crane/nrelay-cli.git"
+    "url": "git+https://github.com/abrn/nrelay-unity-cli.git"
   },
   "keywords": [
     "nrelay",
@@ -29,13 +29,13 @@
   "author": "tcrane",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomas-crane/nrelay-cli/issues"
+    "url": "https://github.com/abrn/nrelay-unity-cli/issues"
   },
-  "homepage": "https://github.com/thomas-crane/nrelay-cli#readme",
+  "homepage": "https://github.com/abrn/nrelay-unity-cli#readme",
   "devDependencies": {
     "@types/execa": "^0.9.0",
     "@types/listr": "^0.13.0",
-    "@types/node": "^11.12.2",
+    "@types/node": "^11.15.32",
     "@types/rimraf": "^2.0.2",
     "@types/yargs": "^12.0.10",
     "tslint": "^5.14.0",
