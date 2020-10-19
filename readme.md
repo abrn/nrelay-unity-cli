@@ -1,6 +1,10 @@
-# nrelay-cli
+# nrelay-unity-cli
 
-A command line interface for generating and running nrelay projects.
+A command line interface for generating and running Unity nrelay projects
+
+This software was originally written by [Thomas Crane](https://github.com/thomas-crane/) and you can find the original version for flash [here](https://github.com/thomas-crane/nrelay-cli/)
+
+All credit goes to Thomas for writing this and the only commits I am making are to allow the project keep working with the RotMG Unity client.
 
 ## Contents
 
@@ -11,7 +15,6 @@ A command line interface for generating and running nrelay projects.
   + [build](#build)
   + [eject](#eject)
   + [fix](#fix)
-  + [update](#update)
 
 ## Install
 
@@ -84,13 +87,3 @@ nrelay fix
 ```
 
 Adds any missing files which are required by the CLI.
-
-### update
-
-The update command updates a project's nrelay dependency to the latest version. This is an alias for `npm install --save nrelay@next`.
-
-```no-lang
-nrelay update
-```
-
-Updates the nrelay dependency of the project.
