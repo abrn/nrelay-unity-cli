@@ -8,7 +8,6 @@ import { eject } from './commands/eject';
 import { fix } from './commands/fix';
 import { newCmd } from './commands/new';
 import { run } from './commands/run';
-import { update } from './commands/update';
 import * as fsUtil from './util/fs-util';
 import { logErr, logOk, logWarn } from './util/log';
 import { cwd } from './util/path-util';
@@ -42,20 +41,10 @@ yargs
   })
   .command('run', 'Run an nrelay project.', (args) => {
     return args
-      .option('update', {
-        default: true,
-        type: 'boolean',
-        describe: 'Check for updates',
-      })
       .option('debug', {
         default: false,
         type: 'boolean',
         describe: 'Log more information',
-      })
-      .option('force-update', {
-        default: false,
-        type: 'boolean',
-        describe: 'Force an update',
       })
       .option('plugins', {
         default: true,
@@ -148,23 +137,6 @@ yargs
       logOk([
         'Project folder fixed.',
         `Run ${chalk.magenta('nrelay run')} to get started!`,
-      ]);
-    }).catch((err) => {
-      logErr(err);
-    });
-  })
-  .command('update', 'Updates nrelay to the latest version.', () => undefined, () => {
-    return fsUtil.exists(cwd('.nrelay')).then((exists) => {
-      if (!exists) {
-        const err = new Error('This folder does not appear to be an nrelay project.');
-        err.name = 'NOT_NRELAY_PROJECT';
-        throw err;
-      } else {
-        return update.run();
-      }
-    }).then(() => {
-      logOk([
-        'nrelay updated to the latest version.',
       ]);
     }).catch((err) => {
       logErr(err);
